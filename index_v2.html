@@ -23,7 +23,7 @@
 
     <!--* =============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/all.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style_v2.css" />
   </head>
   <body>
     <header class="header" id="header">
@@ -73,7 +73,7 @@
     </header>
 
     <main class="main">
-      <div class="videoBx">
+      <div class="videoBx" id="div-desktop">
         <section class="videoSplit">
           <!--* Home Banner video split  -->
           <div class="side" id="side1">
@@ -103,7 +103,12 @@
         <!--*  ==================== HOME ====================-->
         <section class="home" id="home">
           <!--* Home Banner background image  -->
-          <!-- <img src="assets/img/home1.jpg" alt="" class="home__img" /> -->
+          <img
+            src="assets/img/home1.jpg"
+            alt=""
+            class="home__img"
+            id="div-mobile"
+          />
 
           <div class="home__container container grid">
             <div class="home__data">
@@ -302,11 +307,7 @@
 
           <div class="video__content">
             <video id="video-file">
-              <source
-                src="assets/video/video1.mp4"
-                type="video/mp4"
-                poster="assets/img/place1.jpg"
-              />
+              <source src="assets/video/video1.mp4" type="video/mp4" />
             </video>
 
             <button class="button button--flex video__button" id="video-button">
