@@ -741,8 +741,9 @@ input {
 
 .place__card,
 .place__img {
+  height: 150px;
   /* height: 230px; */
-  height: 100%;
+  /* height: 100%; */
 }
 
 .place__card {
