@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="https://www.linkedin.com/in/zCoder" />
-    <title>Massmood Agencia de Publicidad</title>
+    <title>Massmood Agencia Publicidad</title>
     <link
       rel="shortcut icon"
       href="assets/img/favicon.png"
@@ -73,82 +73,53 @@
     </header>
 
     <main class="main">
-      <div class="videoBx">
-        <section class="videoSplit">
-          <!--* Home Banner video split  -->
-          <div class="side" id="side1">
-            <video
-              src="assets/video/home.mp4"
-              type="video/mp4"
-              autoplay
-              loop
-              muted
-              poster="assets/img/home1.jpg"
-            ></video>
+      <!--*  ==================== HOME ====================-->
+      <section class="home" id="home">
+        <img src="assets/img/home1.jpg" alt="" class="home__img" />
+
+        <div class="home__container container grid">
+          <div class="home__data">
+            <span class="home__data-subtitle">Bienvenidos a la</span>
+            <h1 class="home__data-title">
+              <b>AGENCIA!</b><span><br />Marketing & Social Media</span>
+            </h1>
           </div>
-          <div class="side" id="side2">
-            <video
-              src="assets/video/home.mp4"
-              type="video/mp4"
-              autoplay
-              loop
-              muted
-              poster="assets/img/home1.jpg"
-            ></video>
+
+          <div class="home__social">
+            <a
+              href="https://api.whatsapp.com/send?phone=584243391729&text=¡Bienvenidos al chat de MASSMOOD! Por favor, envíanos un mensaje"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/cycsingenieria"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a
+              href="https://twitter.com/@cycsingenieria?lang=en"
+              target="_blank"
+              class="home__social-link"
+            >
+              <i class="fab fa-twitter" aria-hidden="true"></i>
+            </a>
           </div>
-        </section>
 
-        <!--* ------- End video split ------->
-
-        <!--*  ==================== HOME ====================-->
-        <section class="home" id="home">
-          <!--* Home Banner background image  -->
-          <!-- <img src="assets/img/home1.jpg" alt="" class="home__img" /> -->
-
-          <div class="home__container container grid">
-            <div class="home__data">
-              <span class="home__data-subtitle">Bienvenidos a la</span>
-              <h1 class="home__data-title">
-                <b>AGENCIA!</b><span><br />Marketing & Social Media</span>
-              </h1>
+          <div class="home__info">
+            <div>
+              <span class="home__info-title">Nuestro equipo...</span>
             </div>
 
-            <div class="home__social">
-              <a
-                href="https://api.whatsapp.com/send?phone=584243391729&text=¡Bienvenidos al chat de MASSMOOD! Por favor, envíanos un mensaje"
-                target="_blank"
-                class="home__social-link"
-              >
-                <i class="fab fa-whatsapp" aria-hidden="true"></i>
-              </a>
-              <a
-                href="https://www.instagram.com/cycsingenieria"
-                target="_blank"
-                class="home__social-link"
-              >
-                <i class="fab fa-instagram" aria-hidden="true"></i>
-              </a>
-              <a
-                href="https://twitter.com/@cycsingenieria?lang=en"
-                target="_blank"
-                class="home__social-link"
-              >
-                <i class="fab fa-twitter" aria-hidden="true"></i>
-              </a>
-            </div>
-
-            <div class="home__info">
-              <div>
-                <span class="home__info-title">Nuestro equipo...</span>
-              </div>
-
-              <div class="home__info-overlay">
-                <img src="assets/img/home2.jpg" alt="" class="home__info-img" />
-              </div>
+            <div class="home__info-overlay">
+              <img src="assets/img/home2.jpg" alt="" class="home__info-img" />
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
 
       <!--*  ==================== ABOUT ====================-->
       <section class="about section" id="about">
@@ -218,17 +189,6 @@
             </div>
 
             <!--* ==================== SERVICES (services 4) ====================-->
-            <!-- <div class="services__card swiper-slide">
-              <img src="assets/img/service5.jpg" alt="" class="services__img" />
-              <div class="services__data">
-                <h2 class="services__title">SEO</h2>
-                <span class="services__description"
-                  >Google statitics management</span
-                >
-              </div>
-            </div> -->
-
-            <!--* ==================== SERVICES (services 5) ====================-->
             <div class="services__card swiper-slide">
               <img src="assets/img/service4.jpg" alt="" class="services__img" />
               <div class="services__data">
@@ -382,6 +342,7 @@
       </section>
 
       <!--* ==================== SUBSCRIBE ====================-->
+
       <section class="subscribe section" id="subscribe">
         <div class="subscribe__bg">
           <div class="subscribe__container container">
@@ -484,7 +445,7 @@
 
               <li class="footer__item">
                 <a href="#subscribe" class="footer__link"
-                  >Subscripción & Newsletter</a
+                  >Suscripción & Newsletter</a
                 >
               </li>
             </ul>
@@ -547,21 +508,18 @@
       </div>
     </footer>
 
-    <!--* ====== VIDEO SPLITTED ON PAGE SCROLL ======-->
-    <script src="assets/js/videoSplit.js"></script>
-
-    <!--* ====== SCROLL UP (Icono flecha subir) =======-->
+    <!--* === SCROLL UP (Icono flecha subir) ===-->
     <a href="#" class="scrollup" id="scroll-up">
       <i class="ri-arrow-up-line scrollup__icon"></i>
     </a>
 
-    <!--* =============== SCROLL REVEAL ===============-->
+    <!--* =============== SCROLL REVEAL ==============-->
     <script src="assets/js/scrollreveal.min.js"></script>
 
-    <!--* ================= SWIPER JS =================-->
+    <!--* =============== SWIPER JS ===============-->
     <script src="assets/swiper/swiper-bundle.min.js"></script>
 
-    <!--* ================= SHOW MENU =================-->
+    <!--* =============== SHOW MENU===============-->
     <script src="assets/js/main.js"></script>
 
     <!--* ================= EMAIL VALIDATION ==========-->

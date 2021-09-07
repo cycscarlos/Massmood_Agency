@@ -1,5 +1,7 @@
 /** =============== GOOGLE FONTS ===============*/
 
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap"); */
+
 @font-face {
   font-family: "Open Sans";
   font-display: swap;
@@ -28,7 +30,6 @@
 
   --color-main: #ff4c00;
   --color-base: rgb(29, 55, 68);
-  --color-base-alt: rgba(29, 55, 68, 0.4);
   --color-middle: rgb(37, 51, 60);
   --color-light: rgb(30, 82, 113);
   --color-green: #08f1af;
@@ -50,7 +51,6 @@
   --input-color: hsl(var(--hue-color), 24%, 97%);
   --body-color: hsl(var(--hue-color), 100%, 99%);
   --white-color: #fff;
-  --black-color: #000;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
 
@@ -87,7 +87,6 @@
   /*# ========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
-  --z-video: 1000;
 
   /*# ========== Hover overlay ==========*/
   --img-transition: 0.3s;
@@ -186,7 +185,6 @@ video {
 button,
 input {
   border: none;
-  outline: none;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
@@ -205,7 +203,7 @@ input {
 }
 
 .ri-arrow-right-line {
-  color: var(--white-color);
+  color: var(--color-white);
 }
 
 /** =============== REUSABLE CSS CLASSES ===============*/
@@ -217,6 +215,7 @@ input {
   font-size: var(--h2-font-size);
   color: var(--title-color);
   text-align: center;
+  /* text-transform: capitalize; */
   margin-bottom: var(--mb-2);
 }
 
@@ -258,7 +257,17 @@ input {
 }
 
 .nav__logo {
+  /* position: relative; */
+  /* box-shadow: 0 0 0 0px #000, 0 0 0 0px grey, 0 6px 6px 2.5px #000; */
+
   font-weight: var(--font-semi-bold);
+  /* font-size: var(--h1-font-size);
+  font-family: var(--font-logo);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.6s;
+  text-align: center; */
 }
 
 .nav__toggle {
@@ -379,63 +388,6 @@ input {
 }
 
 /** =============== HOME ===============*/
-
-/** ======= Home Banner video split ======*/
-.videoBx {
-  /*_ ¡Ojo! Dos de los secretos.. */
-  background: hsl(200, 29%, 12%);
-  min-height: 220vh;
-}
-
-.videoSplit {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-}
-
-.videoSplit .side {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.videoSplit .side video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  /*_ No importa el tamaño del vídeo, lo adapta a su box padre */
-  object-fit: cover;
-}
-
-.videoSplit .side#side1 {
-  clip-path: polygon(0 0, 0 100%, 100% 100%);
-}
-
-.videoSplit .side#side2 {
-  clip-path: polygon(0 0, 100% 0, 100% 100%);
-}
-
-/** New! Colocamos una sombra encima del vídeo para resaltar los textos */
-.side::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--color-base-alt);
-  z-index: var(--z-video);
-}
-/** ------ End Banner video split ------*/
-
-/** ===== Home Banner background image ====*/
 .home__img {
   position: absolute;
   top: 0;
@@ -445,7 +397,6 @@ input {
   object-fit: cover;
   object-position: 83%;
 }
-/** ------ End Banner background image ----*/
 
 .home__container {
   position: relative;
@@ -453,6 +404,16 @@ input {
   align-content: center;
   row-gap: 3rem;
 }
+/*_ New! Colocamos una sombra encima de la imagen para resaltar el texto */
+/* .home__container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+} */
 
 .home__data-subtitle,
 .home__data-title,
@@ -560,13 +521,9 @@ input {
   display: inline-block;
   background-color: var(--first-color);
   color: var(--white-color);
-  font-weight: var(--font-semi-bold);
-  border-radius: 3px;
   padding: 1rem 2rem;
+  font-weight: var(--font-semi-bold);
   transition: 0.3s;
-  border: none;
-  outline: none;
-  box-shadow: none;
 }
 
 .button:hover {
@@ -768,21 +725,17 @@ input {
   right: 1rem;
   bottom: -1rem;
   padding: 1rem 1.5rem;
-  border: none;
-  outline: none;
-  border-radius: 3px;
 }
 
 .video__button-icon {
   font-size: 1.2rem;
 }
 
-/** =============== PROYECTOS ===============*/
+/*=============== PROYECTOS ===============*/
 
 .place__container {
   /* grid-template-columns: repeat(2, max-content); */
-  /* grid-template-columns: repeat(2, 1fr); */
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   justify-content: center;
 }
 
@@ -1080,10 +1033,6 @@ input {
 
 /** For small devices */
 @media screen and (max-width: 340px) {
-  .videoBx {
-    /** ¡Ojo! Dos de los secretos.. */
-    min-height: 100vh;
-  }
   .place__container {
     /* grid-template-columns: max-content; */
     grid-template-columns: 1fr;
@@ -1093,6 +1042,7 @@ input {
     width: 190px;
     padding: 1rem;
   }
+
   .experience__content {
     padding: 0;
   }
@@ -1102,6 +1052,7 @@ input {
   .experience__overlay:nth-child(2) {
     width: 80px;
   }
+
   .experience__img,
   .video__container {
     padding: 0;
@@ -1116,6 +1067,11 @@ input {
     justify-content: center;
   }
 
+  /* .place__container {
+    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(2, 1fr);
+  } */
+
   .subscribe__form {
     width: 470px;
     margin: 0 auto;
@@ -1126,7 +1082,6 @@ input {
   body {
     margin: 0;
   }
-
   .nav {
     height: calc(var(--header-height) + 1.5rem);
   }
@@ -1219,6 +1174,10 @@ input {
     grid-template-columns: repeat(3, 1fr);
     padding-top: 2rem;
   }
+
+  /* .place__container {
+    padding-top: 2rem;
+  } */
 
   .experience__overlay:nth-child(1) {
     width: 363px;
