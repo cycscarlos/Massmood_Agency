@@ -4,24 +4,27 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="https://www.linkedin.com/in/zCoder" />
-    <title>Massmood Agencia Publicidad</title>
+    <meta
+      name="author"
+      content="https://www.linkedin.com/in/carlos-colmenares-a-5a717375/"
+    />
+    <title>Massmood | Digital Marketing Agency</title>
     <link
       rel="shortcut icon"
       href="assets/img/favicon.png"
       type="image/x-icon"
     />
 
-    <!--* ===============  REMIX ICONS =============== -->
+    <!--# ===============  REMIX ICONS =============== -->
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
 
-    <!--* =============== SWIPER CSS ===============-->
+    <!--# =============== SWIPER CSS ===============-->
     <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css" />
 
-    <!--* =============== CSS ===============-->
+    <!--# =============== CSS ===============-->
     <link rel="stylesheet" href="assets/css/all.min.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
@@ -57,7 +60,7 @@
             </li>
           </ul>
 
-          <!--#* Theme change button -->
+          <!--# Theme change button -->
           <div class="nav__dark">
             <span class="change-theme-name">Modo Obscuro</span>
             <i class="ri-moon-line change-theme" id="theme-button"></i>
@@ -73,55 +76,92 @@
     </header>
 
     <main class="main">
-      <!--*  ==================== HOME ====================-->
-      <section class="home" id="home">
-        <img src="assets/img/home1.jpg" alt="" class="home__img" />
-
-        <div class="home__container container grid">
-          <div class="home__data">
-            <span class="home__data-subtitle">Bienvenidos a la</span>
-            <h1 class="home__data-title">
-              <b>AGENCIA!</b><span><br />Marketing & Social Media</span>
-            </h1>
+      <div class="videoBx">
+        <section class="videoSplit div-desktop">
+          <!--# Home Banner video split  -->
+          <div class="side" id="side1">
+            <video
+              src="assets/video/home.mp4"
+              type="video/mp4"
+              autoplay
+              loop
+              muted
+              poster="assets/img/home1.jpg"
+            ></video>
           </div>
-
-          <div class="home__social">
-            <a
-              href="https://api.whatsapp.com/send?phone=584243391729&text=¡Bienvenidos al chat de MASSMOOD! Por favor, envíanos un mensaje"
-              target="_blank"
-              class="home__social-link"
-            >
-              <i class="fab fa-whatsapp" aria-hidden="true"></i>
-            </a>
-            <a
-              href="https://www.instagram.com/cycsingenieria"
-              target="_blank"
-              class="home__social-link"
-            >
-              <i class="fab fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a
-              href="https://twitter.com/@cycsingenieria?lang=en"
-              target="_blank"
-              class="home__social-link"
-            >
-              <i class="fab fa-twitter" aria-hidden="true"></i>
-            </a>
+          <div class="side" id="side2">
+            <video
+              src="assets/video/home.mp4"
+              type="video/mp4"
+              autoplay
+              loop
+              muted
+              poster="assets/img/home1.jpg"
+            ></video>
           </div>
+        </section>
 
-          <div class="home__info">
-            <div>
-              <span class="home__info-title">Nuestro equipo...</span>
+        <!--# ------- End video split ------->
+
+        <!--#  ==================== HOME ====================-->
+        <section class="home" id="home">
+          <!--# Home Banner background image  -->
+          <img
+            src="assets/img/home3.jpg"
+            alt="Home banner background image"
+            class="home__img div-mobile"
+          />
+
+          <div class="home__container container grid">
+            <div class="home__data">
+              <span class="home__data-subtitle">Bienvenidos a la</span>
+              <h1 class="home__data-title">
+                <b>AGENCIA!</b><span><br />Marketing & Social Media</span>
+              </h1>
             </div>
 
-            <div class="home__info-overlay">
-              <img src="assets/img/home2.jpg" alt="" class="home__info-img" />
+            <div class="home__social">
+              <a
+                href="https://api.whatsapp.com/send?phone=584243391729&text=¡Bienvenidos al chat de MASSMOOD! Por favor, envíanos un mensaje"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/cycsingenieria"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+              <a
+                href="https://twitter.com/@cycsingenieria?lang=en"
+                target="_blank"
+                class="home__social-link"
+              >
+                <i class="fab fa-twitter" aria-hidden="true"></i>
+              </a>
+            </div>
+
+            <div class="home__info">
+              <div>
+                <span class="home__info-title">Nuestro equipo...</span>
+              </div>
+
+              <div class="home__info-overlay">
+                <img
+                  src="assets/img/home2.jpg"
+                  alt="our team work image"
+                  class="home__info-img"
+                />
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
-      <!--*  ==================== ABOUT ====================-->
+      <!--#  ==================== ABOUT ====================-->
       <section class="about section" id="about">
         <div class="about__container container grid">
           <div class="about__data">
@@ -143,25 +183,37 @@
 
           <div class="about__img">
             <div class="about__img-overlay">
-              <img src="assets/img/about1.jpg" alt="" class="about__img-one" />
+              <img
+                src="assets/img/about1.jpg"
+                alt="many people working on a table"
+                class="about__img-one"
+              />
             </div>
 
             <div class="about__img-overlay">
-              <img src="assets/img/about2.jpg" alt="" class="about__img-two" />
+              <img
+                src="assets/img/about2.jpg"
+                alt="Laptop showing a lema"
+                class="about__img-two"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <!--* ==================== SERVICES (services) ====================-->
+      <!--# ==================== SERVICES (services) ====================-->
       <section class="services section" id="services">
         <h2 class="section__title">Nuestros Servicios</h2>
 
         <div class="services__container container swiper-container">
           <div class="swiper-wrapper">
-            <!--* ==================== SERVICES (services 1) ====================-->
+            <!--# ==================== SERVICES (services 1) ====================-->
             <div class="services__card swiper-slide">
-              <img src="assets/img/service1.jpg" alt="" class="services__img" />
+              <img
+                src="assets/img/service1.jpg"
+                alt="a man showing bulb like idea theme"
+                class="services__img"
+              />
               <div class="services__data">
                 <h2 class="services__title">MARCA</h2>
                 <span class="services__description"
@@ -170,27 +222,39 @@
               </div>
             </div>
 
-            <!--* ==================== SERVICES (services 2) ====================-->
+            <!--# ==================== SERVICES (services 2) ====================-->
             <div class="services__card swiper-slide">
-              <img src="assets/img/service2.jpg" alt="" class="services__img" />
+              <img
+                src="assets/img/service2.jpg"
+                alt="somebody working on a laptop"
+                class="services__img"
+              />
               <div class="services__data">
                 <h2 class="services__title">WEB</h2>
                 <span class="services__description">Diseño y Desarrollo</span>
               </div>
             </div>
 
-            <!--* ==================== SERVICES (services 3) ====================-->
+            <!--# ==================== SERVICES (services 3) ====================-->
             <div class="services__card swiper-slide">
-              <img src="assets/img/service3.jpg" alt="" class="services__img" />
+              <img
+                src="assets/img/service3.jpg"
+                alt="social media icons"
+                class="services__img"
+              />
               <div class="services__data">
                 <h2 class="services__title">SOCIAL MEDIA</h2>
                 <span class="services__description">Posicionamieto</span>
               </div>
             </div>
 
-            <!--* ==================== SERVICES (services 4) ====================-->
+            <!--# ==================== SERVICES (services 4) ====================-->
             <div class="services__card swiper-slide">
-              <img src="assets/img/service4.jpg" alt="" class="services__img" />
+              <img
+                src="assets/img/service4.jpg"
+                alt="people working on a blackboard"
+                class="services__img"
+              />
               <div class="services__data">
                 <h2 class="services__title">MARKETING</h2>
                 <span class="services__description"
@@ -202,7 +266,7 @@
         </div>
       </section>
 
-      <!--* ==================== EXPERIENCE ====================-->
+      <!--# ==================== EXPERIENCE ====================-->
       <section class="experience section" id="experience">
         <h2 class="section__title">
           Nuestra Experiencia <br />
@@ -234,7 +298,7 @@
             <div class="experience__overlay">
               <img
                 src="assets/img/experience1.jpg"
-                alt=""
+                alt="big meeting room"
                 class="experience__img-one"
               />
             </div>
@@ -242,7 +306,7 @@
             <div class="experience__overlay">
               <img
                 src="assets/img/experience2.jpg"
-                alt=""
+                alt="people working on a big meeting room"
                 class="experience__img-two"
               />
             </div>
@@ -250,7 +314,7 @@
         </div>
       </section>
 
-      <!--* ==================== VIDEO ====================-->
+      <!--# ==================== VIDEO ====================-->
       <section class="video section" id="video">
         <h2 class="section__title">Un día cualquiera en nuestras oficinas</h2>
 
@@ -260,30 +324,42 @@
             Amamos lo que hacemos!
           </p>
 
-          <div class="video__content">
+          <div class="video__content div-desktop-place">
             <video id="video-file">
-              <source
-                src="assets/video/video1.mp4"
-                type="video/mp4"
-                poster="assets/img/place1.jpg"
-              />
+              <source src="assets/video/video1.mp4" type="video/mp4" />
             </video>
 
-            <button class="button button--flex video__button" id="video-button">
+            <button
+              class="button button--flex video__button div-desktop-place"
+              id="video-button"
+            >
               <i class="ri-play-line video__button-icon" id="video-icon"></i>
             </button>
+          </div>
+
+          <!--# Solo para mobiles viewport  -->
+
+          <div class="div-mobile-place">
+            <img
+              src="assets/img/place1.jpg"
+              alt="young people jumping happily on a background mobile image"
+            />
           </div>
         </div>
       </section>
 
-      <!--* ==================== PROYECTOS ====================-->
+      <!--# ==================== PROYECTOS ====================-->
       <section class="place section" id="place">
         <h2 class="section__title">Algunos de Nuestros Proyectos</h2>
 
         <div class="place__container container grid">
-          <!--* ==================== PROYECTOS CARD 1 ====================-->
+          <!--# ==================== PROYECTOS CARD 1 ====================-->
           <div class="place__card">
-            <img src="assets/img/proyecto1.jpg" alt="" class="place__img" />
+            <img
+              src="assets/img/proyecto1.jpg"
+              alt="screenshot of website main page"
+              class="place__img"
+            />
 
             <button class="button button--flex place__button">
               <a href="https://cycs.netlify.app" target="_blank"
@@ -292,45 +368,65 @@
             </button>
           </div>
 
-          <!--* ==================== PROYECTOS CARD 2 ====================-->
+          <!--# ==================== PROYECTOS CARD 2 ====================-->
           <div class="place__card">
-            <img src="assets/img/proyecto2a.jpg" alt="" class="place__img" />
+            <img
+              src="assets/img/proyecto2a.jpg"
+              alt="screenshot of website main page"
+              class="place__img"
+            />
 
             <button class="button button--flex place__button">
               <i class="ri-arrow-right-line"></i>
             </button>
           </div>
 
-          <!--* ==================== PROYECTOS CARD 3 ====================-->
+          <!--# ==================== PROYECTOS CARD 3 ====================-->
           <div class="place__card">
-            <img src="assets/img/proyecto3.jpg" alt="" class="place__img" />
+            <img
+              src="assets/img/proyecto3.jpg"
+              alt="screenshot of website main page"
+              class="place__img"
+            />
 
             <button class="button button--flex place__button">
               <i class="ri-arrow-right-line"></i>
             </button>
           </div>
 
-          <!--* ==================== PROYECTOS CARD 4 ====================-->
+          <!--# ==================== PROYECTOS CARD 4 ====================-->
           <div class="place__card">
-            <img src="assets/img/proyecto4.jpg" alt="" class="place__img" />
+            <img
+              src="assets/img/proyecto4.jpg"
+              alt="screenshot of website main page"
+              class="place__img"
+            />
 
             <button class="button button--flex place__button">
               <i class="ri-arrow-right-line"></i>
             </button>
           </div>
 
-          <!--* ==================== PROYECTOS CARD 5 ====================-->
+          <!--# ==================== PROYECTOS CARD 5 ====================-->
           <div class="place__card">
-            <img src="assets/img/proyecto5.jpg" alt="" class="place__img" />
+            <img
+              src="assets/img/proyecto5.jpg"
+              alt="screenshot of website main page"
+              class="place__img"
+            />
 
             <button class="button button--flex place__button">
               <i class="ri-arrow-right-line"></i>
             </button>
           </div>
 
-          <!--* ==================== PROYECTOS CARD 6 ====================-->
+          <!--# ==================== PROYECTOS CARD 6 ====================-->
           <div class="place__card">
-            <img src="assets/img/proyecto6.jpg" alt="" class="place__img" />
+            <img
+              src="assets/img/proyecto6.jpg"
+              alt="screenshot of website main page"
+              class="place__img"
+            />
 
             <button class="button button--flex place__button">
               <a href="https://carlos-colmenares-a.netlify.app" target="_blank"
@@ -341,8 +437,7 @@
         </div>
       </section>
 
-      <!--* ==================== SUBSCRIBE ====================-->
-
+      <!--# ==================== SUBSCRIBE ====================-->
       <section class="subscribe section" id="subscribe">
         <div class="subscribe__bg">
           <div class="subscribe__container container">
@@ -377,29 +472,49 @@
         </div>
       </section>
 
-      <!--* ==================== clientes ====================-->
+      <!--# ==================== clientes ====================-->
       <section class="clientes section" id="clientes">
         <div class="clientes__container container grid">
           <div class="clientes__content">
-            <img src="assets/img/clientes1.png" alt="" class="clientes__img" />
+            <img
+              src="assets/img/clientes1.png"
+              alt="companies main logo"
+              class="clientes__img"
+            />
           </div>
           <div class="clientes__content">
-            <img src="assets/img/clientes2.png" alt="" class="clientes__img" />
+            <img
+              src="assets/img/clientes2.png"
+              alt="companies main logo"
+              class="clientes__img"
+            />
           </div>
           <div class="clientes__content">
-            <img src="assets/img/clientes3.png" alt="" class="clientes__img" />
+            <img
+              src="assets/img/clientes3.png"
+              alt="companies main logo"
+              class="clientes__img"
+            />
           </div>
           <div class="clientes__content">
-            <img src="assets/img/clientes4.png" alt="" class="clientes__img" />
+            <img
+              src="assets/img/clientes4.png"
+              alt="companies main logo"
+              class="clientes__img"
+            />
           </div>
           <div class="clientes__content">
-            <img src="assets/img/clientes5.png" alt="" class="clientes__img" />
+            <img
+              src="assets/img/clientes5.png"
+              alt="companies main logo"
+              class="clientes__img"
+            />
           </div>
         </div>
       </section>
     </main>
 
-    <!--* ==================== FOOTER ====================-->
+    <!--# ==================== FOOTER ====================-->
     <footer class="footer section" id="contact">
       <div class="footer__container container grid">
         <div class="footer__content grid">
@@ -445,7 +560,7 @@
 
               <li class="footer__item">
                 <a href="#subscribe" class="footer__link"
-                  >Suscripción & Newsletter</a
+                  >Subscripción & Newsletter</a
                 >
               </li>
             </ul>
@@ -495,7 +610,7 @@
             </ul>
           </div>
         </div>
-        <!--* ==================== FOOTER COPYRIGHTS====================-->
+        <!--# ==================== FOOTER COPYRIGHTS====================-->
         <div class="footer__rights">
           <p class="footer__copy">
             &#169; 2021 Carlos Colmenares A. Todos los derechos reservados.
@@ -508,21 +623,24 @@
       </div>
     </footer>
 
-    <!--* === SCROLL UP (Icono flecha subir) ===-->
+    <!--# ====== VIDEO SPLITTED ON PAGE SCROLL ======-->
+    <script src="assets/js/videoSplit.js"></script>
+
+    <!--# ====== SCROLL UP (Icono flecha subir) =======-->
     <a href="#" class="scrollup" id="scroll-up">
       <i class="ri-arrow-up-line scrollup__icon"></i>
     </a>
 
-    <!--* =============== SCROLL REVEAL ==============-->
+    <!--# =============== SCROLL REVEAL ===============-->
     <script src="assets/js/scrollreveal.min.js"></script>
 
-    <!--* =============== SWIPER JS ===============-->
+    <!--# ================= SWIPER JS =================-->
     <script src="assets/swiper/swiper-bundle.min.js"></script>
 
-    <!--* =============== SHOW MENU===============-->
+    <!--# ================= SHOW MENU =================-->
     <script src="assets/js/main.js"></script>
 
-    <!--* ================= EMAIL VALIDATION ==========-->
+    <!--# ================= EMAIL VALIDATION ==========-->
     <script src="assets/js/validaEmail.js"></script>
   </body>
 </html>

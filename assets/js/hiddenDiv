@@ -1,9 +1,0 @@
-<script language="JavaScript">
-if (screen.width<1024)
-//codigo resolución pequeña
-else
-if (screen.width<1280)
-//codigo resolución mediana
-else
-//codigo resolución grande
-</script>

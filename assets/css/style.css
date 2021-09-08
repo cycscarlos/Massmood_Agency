@@ -1,6 +1,4 @@
-/** =============== GOOGLE FONTS ===============*/
-
-/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@500;600;700&display=swap"); */
+/*# =============== GOOGLE FONTS ===============*/
 
 @font-face {
   font-family: "Open Sans";
@@ -15,7 +13,7 @@
     url(../fonts/Raleway-Bold.ttf);
 }
 
-/** =============== VARIABLES CSS ===============*/
+/*# =============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3rem;
 
@@ -30,13 +28,14 @@
 
   --color-main: #ff4c00;
   --color-base: rgb(29, 55, 68);
+  --color-base-alt: rgba(29, 55, 68, 0.4);
   --color-middle: rgb(37, 51, 60);
   --color-light: rgb(30, 82, 113);
   --color-green: #08f1af;
 
   /*# ========== Colors ==========*/
-  /*_ Change favorite color to match images */
-  /*_ Green dark 190 - Green 171 - Green Blue 200*/
+  /*# Change favorite color to match images */
+  /*# Green dark 190 - Green 171 - Green Blue 200*/
   /* --hue-color: 163; */
   --hue-color: 200;
 
@@ -51,6 +50,7 @@
   --input-color: hsl(var(--hue-color), 24%, 97%);
   --body-color: hsl(var(--hue-color), 100%, 99%);
   --white-color: #fff;
+  --black-color: #000;
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
 
@@ -87,6 +87,7 @@
   /*# ========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
+  --z-video: 1000;
 
   /*# ========== Hover overlay ==========*/
   --img-transition: 0.3s;
@@ -106,7 +107,7 @@
   }
 }
 
-/** ========== Variables Dark theme ==========*/
+/*# ========== Variables Dark theme ==========*/
 body.dark-theme {
   --first-color-second: hsl(var(--hue-color), 54%, 12%);
   --title-color: hsl(var(--hue-color), 24%, 95%);
@@ -117,7 +118,7 @@ body.dark-theme {
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
 
-/** ========== Button Dark/Light ==========*/
+/*# ========== Button Dark/Light ==========*/
 .nav__dark {
   display: flex;
   align-items: center;
@@ -141,7 +142,7 @@ body.dark-theme {
   font-size: var(--small-font-size);
 }
 
-/** =============== BASE ===============*/
+/*# =============== BASE ===============*/
 * {
   box-sizing: border-box;
   padding: 0;
@@ -185,6 +186,7 @@ video {
 button,
 input {
   border: none;
+  outline: none;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
 }
@@ -197,16 +199,16 @@ input {
   outline: none;
 }
 
-/*_ use by Scrollreveals function */
+/*# use by Scrollreveals function */
 .main {
   overflow-x: hidden;
 }
 
 .ri-arrow-right-line {
-  color: var(--color-white);
+  color: var(--white-color);
 }
 
-/** =============== REUSABLE CSS CLASSES ===============*/
+/*# =============== REUSABLE CSS CLASSES ===============*/
 .section {
   padding: 4.5rem 0 2.5rem;
 }
@@ -215,7 +217,6 @@ input {
   font-size: var(--h2-font-size);
   color: var(--title-color);
   text-align: center;
-  /* text-transform: capitalize; */
   margin-bottom: var(--mb-2);
 }
 
@@ -230,19 +231,19 @@ input {
   gap: 1.5rem;
 }
 
-/** =============== HEADER ===============*/
+/*# =============== HEADER ===============*/
 .header {
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  /*_ Temporal, solo para codificar bien el header, luego se sustituye por "transparent" */
+  /*# Temporal, solo para codificar bien el header, luego se sustituye por "transparent" */
   /* background-color: var(--first-color); */
   background-color: transparent;
 }
 
-/** =============== NAV ===============*/
+/*# =============== NAV ===============*/
 .nav {
   height: var(--header-height);
   display: flex;
@@ -257,17 +258,7 @@ input {
 }
 
 .nav__logo {
-  /* position: relative; */
-  /* box-shadow: 0 0 0 0px #000, 0 0 0 0px grey, 0 6px 6px 2.5px #000; */
-
   font-weight: var(--font-semi-bold);
-  /* font-size: var(--h1-font-size);
-  font-family: var(--font-logo);
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  transition: 0.6s;
-  text-align: center; */
 }
 
 .nav__toggle {
@@ -283,7 +274,7 @@ input {
   display: none;
 }
 
-/** Smartphones styles: Codificación Menu de navegación  */
+/*# Smartphones styles: Codificación Menu de navegación  */
 
 @media screen and (max-width: 767px) {
   .nav__menu {
@@ -327,13 +318,13 @@ input {
   cursor: pointer;
 }
 
-/*_  Show Menu */
+/*#  Show Menu */
 
 .show-menu {
   right: 0;
 }
 
-/*_ Change background header */
+/*# Change background header */
 
 .scroll-header {
   background-color: var(--body-color);
@@ -345,9 +336,9 @@ input {
   color: var(--title-color);
 }
 
-/*_ Marca el navegador activo en un momento dado */
+/*# Marca el navegador activo en un momento dado */
 
-/*_ Active link */
+/*# Active link */
 .active-link {
   position: relative;
   color: var(--title-color);
@@ -363,7 +354,7 @@ input {
   left: 0;
 }
 
-/** ========== Button Dark/Light ==========*/
+/*# ========== Button Dark/Light ==========*/
 .nav__dark {
   display: flex;
   align-items: center;
@@ -387,7 +378,65 @@ input {
   font-size: var(--small-font-size);
 }
 
-/** =============== HOME ===============*/
+/*# =============== HOME ===============*/
+
+/*# ======= Home Banner video split ======*/
+.videoBx {
+  /*# ¡Ojo! Dos de los secretos.. */
+  background: hsl(200, 29%, 12%);
+  min-height: 220vh;
+  /* min-height: 220vh; */
+}
+
+.videoSplit {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.videoSplit .side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.videoSplit .side video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*# No importa el tamaño del vídeo, lo adapta a su box padre */
+  object-fit: cover;
+}
+
+.videoSplit .side#side1 {
+  clip-path: polygon(0 0, 0 100%, 100% 100%);
+}
+
+.videoSplit .side#side2 {
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+/*# New! Colocamos una sombra encima del vídeo para resaltar los textos */
+.side::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--color-base-alt);
+  z-index: var(--z-video);
+}
+/*# ------ End Banner video split ------*/
+
+/*# ===== Home Banner background image ====*/
 .home__img {
   position: absolute;
   top: 0;
@@ -397,6 +446,7 @@ input {
   object-fit: cover;
   object-position: 83%;
 }
+/*# ------ End Banner background image ----*/
 
 .home__container {
   position: relative;
@@ -404,16 +454,6 @@ input {
   align-content: center;
   row-gap: 3rem;
 }
-/*_ New! Colocamos una sombra encima de la imagen para resaltar el texto */
-/* .home__container::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(255, 255, 255, 0.2);
-} */
 
 .home__data-subtitle,
 .home__data-title,
@@ -441,7 +481,7 @@ input {
   font-size: var(--h1-font-size);
 }
 
-/** ------ Social Media icons ------ */
+/*# ------ Social Media icons ------ */
 
 .home__social {
   display: flex;
@@ -516,14 +556,18 @@ input {
   transform: var(--img-scale);
 }
 
-/** =============== BUTTONS ===============*/
+/*# =============== BUTTONS ===============*/
 .button {
   display: inline-block;
   background-color: var(--first-color);
   color: var(--white-color);
-  padding: 1rem 2rem;
   font-weight: var(--font-semi-bold);
+  border-radius: 3px;
+  padding: 1rem 2rem;
   transition: 0.3s;
+  border: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .button:hover {
@@ -541,7 +585,7 @@ input {
   padding: 0.5rem;
 }
 
-/** =============== ABOUT US part 1===============*/
+/*# =============== ABOUT US part 1===============*/
 
 .about__data {
   text-align: center;
@@ -606,7 +650,7 @@ input {
   letter-spacing: 0.5px;
   border-radius: 3px;
 }
-/** =============== services ===============*/
+/*# =============== services ===============*/
 
 .services__card {
   position: relative;
@@ -614,7 +658,7 @@ input {
   overflow: var(--img-hidden);
 }
 
-/*_ Se inserta el contenido o texto dentro de la Card  */
+/*# Se inserta el contenido o texto dentro de la Card  */
 .services__data {
   position: absolute;
   bottom: 1.5rem;
@@ -631,7 +675,7 @@ input {
   margin-bottom: var(--mb-0-25);
 }
 
-/*_  Los span se convierten a Block para manipular su tamaño y margenes */
+/*#  Los span se convierten a Block para manipular su tamaño y margenes */
 .services__description {
   display: block;
   font-size: var(--smaller-font-size);
@@ -650,7 +694,7 @@ input {
   background-image: none;
 }
 
-/** =============== EXPERIENCE ===============*/
+/*# =============== EXPERIENCE ===============*/
 .experience__container {
   row-gap: 2.5rem;
   justify-content: center;
@@ -705,7 +749,7 @@ input {
   right: 0;
 }
 
-/** =============== VIDEO ===============*/
+/*# =============== VIDEO ===============*/
 .video__container {
   padding-bottom: 1rem;
 }
@@ -725,17 +769,21 @@ input {
   right: 1rem;
   bottom: -1rem;
   padding: 1rem 1.5rem;
+  border: none;
+  outline: none;
+  border-radius: 3px;
 }
 
 .video__button-icon {
   font-size: 1.2rem;
 }
 
-/*=============== PROYECTOS ===============*/
+/*# =============== PROYECTOS ===============*/
 
 .place__container {
   /* grid-template-columns: repeat(2, max-content); */
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: 1fr;
   justify-content: center;
 }
 
@@ -766,7 +814,7 @@ input {
   padding: 0.75rem 1rem;
 }
 
-/** =============== SUBSCRIBE ===============*/
+/*# =============== SUBSCRIBE ===============*/
 .subscribe__bg {
   background-color: var(--first-color-second);
   padding: 2.5rem 0;
@@ -804,7 +852,7 @@ input {
   color: var(--text-color);
 }
 
-/** Email Validation */
+/*# Email Validation */
 
 .validaEmail {
   width: 100%;
@@ -850,7 +898,7 @@ input {
   z-index: 1000;
 }
 
-/** =============== clientes ===============*/
+/*# =============== clientes ===============*/
 .clientes__container {
   grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   justify-items: center;
@@ -867,14 +915,14 @@ input {
   transition: var(--img-transition);
 }
 
-/** =============== FOOTER ===============*/
+/*# =============== FOOTER ===============*/
 
-/*_ Separar el footer del copyright */
+/*# Separar el footer del copyright */
 .footer__container {
   row-gap: 5rem;
 }
 
-/** -------- Cuerpo del Footer ------ */
+/*# -------- Cuerpo del Footer ------ */
 .footer__content {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   row-gap: 2rem;
@@ -893,7 +941,7 @@ input {
   margin-bottom: var(--mb-2);
 }
 
-/** ------ Social Media icons ------ */
+/*# ------ Social Media icons ------ */
 
 .footer__social i {
   color: var(--text-color);
@@ -961,7 +1009,7 @@ input {
   color: var(--text-color-light);
 }
 
-/** -------- Cuerpo del Copyright ------ */
+/*# -------- Cuerpo del Copyright ------ */
 
 .footer__rights {
   display: flex;
@@ -986,11 +1034,11 @@ input {
   color: var(--text-color);
 }
 
-/** ========= SCROLL UP (Icono flecha subir) ==========*/
+/*# ========= SCROLL UP (Icono flecha subir) ==========*/
 .scrollup {
   position: fixed;
   right: 1rem;
-  /*_ Temporal, solo para codificar bien el botón, luego se esconde y manipula con JS y la clase "show-scroll" */
+  /*# Temporal, solo para codificar bien el botón, luego se esconde y manipula con JS y la clase "show-scroll" */
   /* bottom: 5rem; */
   bottom: -20%;
   background-color: var(--first-color);
@@ -1011,12 +1059,12 @@ input {
   font-size: 1.2rem;
 }
 
-/*_ Show scroll */
+/*# Show scroll */
 .show-scroll {
   bottom: 5rem;
 }
 
-/** =============== SCROLL BAR ===============*/
+/*# =============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
   width: 0.6rem;
   background-color: var(--scroll-bar-color);
@@ -1030,9 +1078,9 @@ input {
   background-color: var(--text-color-light);
 }
 
-/**! =============== MEDIA QUERIES ===============*/
+/*#! =============== MEDIA QUERIES ===============*/
 
-/** For small devices */
+/*# For small devices */
 @media screen and (max-width: 340px) {
   .place__container {
     /* grid-template-columns: max-content; */
@@ -1043,7 +1091,6 @@ input {
     width: 190px;
     padding: 1rem;
   }
-
   .experience__content {
     padding: 0;
   }
@@ -1053,25 +1100,19 @@ input {
   .experience__overlay:nth-child(2) {
     width: 80px;
   }
-
   .experience__img,
   .video__container {
     padding: 0;
   }
 }
 
-/** For medium devices */
+/*# For medium devices */
 @media screen and (min-width: 568px) {
   .video__container {
     display: grid;
     grid-template-columns: 0.6fr;
     justify-content: center;
   }
-
-  /* .place__container {
-    grid-template-columns: repeat(3, max-content);
-    grid-template-columns: repeat(2, 1fr);
-  } */
 
   .subscribe__form {
     width: 470px;
@@ -1083,6 +1124,7 @@ input {
   body {
     margin: 0;
   }
+
   .nav {
     height: calc(var(--header-height) + 1.5rem);
   }
@@ -1176,10 +1218,6 @@ input {
     padding-top: 2rem;
   }
 
-  /* .place__container {
-    padding-top: 2rem;
-  } */
-
   .experience__overlay:nth-child(1) {
     width: 363px;
     margin-right: 4rem;
@@ -1204,7 +1242,7 @@ input {
   }
 }
 
-/** For large devices */
+/*# For large devices */
 @media screen and (min-width: 1024px) {
   .container {
     margin-left: auto;
@@ -1275,7 +1313,7 @@ input {
     justify-items: center;
   }
 
-  /*_ SWIPER. Aumento del tamaño de las imagenes para viewport tipo Desktop */
+  /*# SWIPER. Aumento del tamaño de las imagenes para viewport tipo Desktop */
   .swiper-slide {
     background-position: center;
     background-size: cover;
@@ -1283,7 +1321,7 @@ input {
     height: 400px;
   }
 
-  /*_ SWIPER. Se re-inserta el contenido o texto dentro de la Card con la imagen aumentada  */
+  /*# SWIPER. Se re-inserta el contenido o texto dentro de la Card con la imagen aumentada  */
   .services__data {
     position: absolute;
     bottom: 10rem;
@@ -1297,7 +1335,7 @@ input {
   }
 }
 
-/** For tall screens on mobiles y desktop*/
+/*# For tall screens on mobiles y desktop*/
 @media screen and (min-height: 721px) {
   body {
     margin: 0;
@@ -1305,5 +1343,58 @@ input {
   .home__container,
   .home__img {
     height: 640px;
+  }
+}
+
+/*# Hidden styles for video on mobiles*/
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .div-desktop {
+    display: none;
+  }
+  .div-mobile {
+    display: block;
+    max-width: 100%;
+    height: 100vh;
+    object-fit: cover;
+  }
+  .div-desktop-place {
+    display: none;
+  }
+  .div-mobile-place {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .videoBx {
+    background: transparent;
+    min-height: 100vh;
+  }
+  .nav__logo,
+  .nav__toggle {
+    color: var(--first-color);
+  }
+  .home__data-subtitle,
+  .home__data-title,
+  .home__social-link,
+  .home__info {
+    color: var(--first-color);
+  }
+}
+
+/*# Show styles for video on desktop*/
+
+@media screen and (min-width: 769px) and (max-width: 3000px) {
+  .div-desktop {
+    display: block;
+  }
+  .div-mobile {
+    display: none;
+  }
+  .div-desktop-place {
+    display: grid;
+  }
+  .div-mobile-place {
+    display: none;
   }
 }
