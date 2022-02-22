@@ -1,10 +1,10 @@
-//* ----------------- SHOW MENU ------------------------ */
+//:  SHOW MENU */
 
 const navMenu = document.getElementById("nav-menu"),
   navToggle = document.getElementById("nav-toggle"),
   navClose = document.getElementById("nav-close");
 
-//* ----------------- MENU SHOW ------------------------ */
+//: MENU SHOW  */
 /* Validate if constant exists */
 if (navToggle) {
   navToggle.addEventListener("click", () => {
@@ -12,7 +12,7 @@ if (navToggle) {
   });
 }
 
-//* ----------------- MENU HIDDEN ------------------------ */
+//: MENU HIDDEN  */
 /* Validate if constant exists */
 if (navClose) {
   navClose.addEventListener("click", () => {
@@ -20,7 +20,7 @@ if (navClose) {
   });
 }
 
-//* -----------------REMOVE MENU MOBILE ----------------------- */
+//: REMOVE MENU MOBILE  */
 const navLink = document.querySelectorAll(".nav__link");
 
 function linkAction() {
@@ -30,7 +30,7 @@ function linkAction() {
 }
 navLink.forEach((n) => n.addEventListener("click", linkAction));
 
-//* ----------------- CHANGE BACKGROUND HEADER ----------------- */
+//:  CHANGE BACKGROUND HEADER  */
 function scrollHeader() {
   const header = document.getElementById("header");
   // When the scroll is greater than 100 viewport height, add the scroll-header class to the header tag
@@ -39,7 +39,7 @@ function scrollHeader() {
 }
 window.addEventListener("scroll", scrollHeader);
 
-//* ----------------- INITIALIZE SWIPER (SERVICES) ------- */
+//: INITIALIZE SWIPER (SERVICES)  */
 let swiper = new Swiper(".swiper-container", {
   effect: "coverflow",
   grabCursor: true,
@@ -51,12 +51,12 @@ let swiper = new Swiper(".swiper-container", {
   spaceBetween: 32,
   loop: true,
   autoplay: {
-    delay: 2000,
+    delay: 1250,
     disableOnInteraction: false,
   },
 });
 
-//* ----------------- VIDEO  ------------------------ */
+//: VIDEO  */
 const videoFile = document.getElementById("video-file"),
   videoButton = document.getElementById("video-button"),
   videoIcon = document.getElementById("video-icon");
@@ -86,7 +86,7 @@ function finalVideo() {
 // ended, when the video ends
 videoFile.addEventListener("ended", finalVideo);
 
-//* ----------------- SHOW SCROLL UP ------------------------ */
+//: SHOW SCROLL UP  */
 function scrollUp() {
   const scrollUp = document.getElementById("scroll-up");
   // When the scroll is higher than 200 viewport height, add the show-scroll class to the a tag with the scroll-top class
@@ -95,7 +95,7 @@ function scrollUp() {
 }
 window.addEventListener("scroll", scrollUp);
 
-//* ----------------- SCROLL SECTIONS ACTIVE LINKS ---------- */
+//: SCROLL SECTIONS ACTIVE LINKS */
 const sections = document.querySelectorAll("section[id]");
 
 function scrollActive() {
@@ -119,7 +119,7 @@ function scrollActive() {
 }
 window.addEventListener("scroll", scrollActive);
 
-//* ----------------- SCROLL REVEAL ANIMATION -------------- */
+//: SCROLL REVEAL ANIMATION */
 const sr = ScrollReveal({
   distance: "60px",
   duration: 2800,
@@ -162,7 +162,7 @@ sr.reveal(
   }
 );
 
-//* ----------------- DARK LIGHT THEME -------------- */
+//: DARK LIGHT THEME */
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";
 const iconTheme = "ri-sun-line";
