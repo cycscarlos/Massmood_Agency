@@ -1160,7 +1160,7 @@ input {
   color: var(--text-color-light);
 }
 
-/** -------- Cuerpo del Copyright ------ */
+/** -------- Copyright ------ */
 
 .footer__rights {
   display: flex;
@@ -1181,7 +1181,7 @@ input {
 }
 
 .footer__copy a:hover {
-  color: var(--text-color);
+  opacity: 0.5;
   text-decoration: none;
 }
 
