@@ -397,8 +397,7 @@ input {
 .videoBx {
   /** ¡Ojo! Dos de los secretos.. */
   background: hsl(200, 29%, 12%);
-  min-height: 220vh;
-  /* min-height: 220vh; */
+  min-height: 220vh; 
 }
 
 .videoSplit {
